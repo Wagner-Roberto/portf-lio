@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu Portfólio</title>
+</head>
+<body class="bg-dark text-light">
+    <header class="container text-center py-5">
+        <img src="img/avatar-perfil.webp" alt="avatar de Wagner" class="rounded-circle" width="150" height="150">
+        <p class="lead">Eu sou Wagner</p>
+        <h1>Eu desenvolvo aplicações desktop e web</h1>
+        <p>Sou aluno do Baruto. Estudo HTML, CSS, JavaScript, TypeScript, Next.js, C++ e C#. Confira meus projetos fictícios!</p>
+        <p>Minhas habilidades</p>
+        <div class="skills-container">
+            <span class="badge bg-secondary m-1">HTML</span>
+            <span class="badge bg-secondary m-1">CSS</span>
+            <span class="badge bg-secondary m-1">JavaScript</span>
+            <span class="badge bg-secondary m-1">TypeScript</span>
+            <span class="badge bg-secondary m-1">Next.js</span>
+            <span class="badge bg-secondary m-1">C++</span>
+            <span class="badge bg-secondary m-1">C#</span>
+        </div>
+    </header>
+    <main class="container mt-5">
+        <h2>Meus Projetos</h2>
+        <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark border-light project-card">
+                    <img src="img/projeto-1.jpg" class="card-img-top" alt="Imagem do jogo em C++ e OpenGL">
+                    <div class="card-body">
+                        <h5 class="card-title">Messed: Jogo de Exploração Espacial</h5>
+                        <p class="card-text">Um jogo 2D desenvolvido em C++ com OpenGL, onde jogadores exploram o esgoto, enfrentam monstros para escapar junta de seus amigos</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja o projeto</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark border-light project-card">
+                    <img src="img/projeto-2.png" class="card-img-top" alt="Imagem do site de carrinho de lanche">
+                    <div class="card-body">
+                        <h5 class="card-title">Sabor na Rua: Site para Carrinho de Lanche</h5>
+                        <p class="card-text">Um site dinâmico desenvolvido com Next.js e TypeScript, oferecendo cardápio interativo, pedidos online e localização do carrinho. Estilizado com CSS para um design moderno e responsivo.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja o projeto</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark border-light project-card">
+                    <img src="img/projeto-3.jpeg" class="card-img-top" alt="Imagem do app de gestão financeira">
+                    <div class="card-body">
+                        <h5 class="card-title">KivDesk: Gestão Financeira Desktop</h5>
+                        <p class="card-text">Uma aplicação desktop em C# para gestão financeira, com relatórios, orçamentos e integração com banco de dados. Interface web complementar usa HTML e JavaScript.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja o projeto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal 1 -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-dark text-light">
+            <div class="modal-header border-light">
+                <h5 class="modal-title" id="modal1Label">Messed: Jogo de Exploração Espacial</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Messed é um jogo 2D desenvolvido em C++ com OpenGL. Nele, jogadores exploram sistemas subterrâneos contaminados e enfrentam monstros grotescos para escapar junto com seus amigos.</p>
+                <p>O foco do desenvolvimento está na movimentação suave, colisões, sistema de combate básico e iluminação dinâmica, usando bibliotecas gráficas e cálculos vetoriais.</p>
+                <p>Este projeto demonstra habilidades em lógica de jogos, gráficos com OpenGL e gerenciamento de recursos em C++.</p>
+                <img src="img/projeto-1.jpg" class="img-fluid w-100" alt="Imagem do jogo Messed">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-dark text-light">
+            <div class="modal-header border-light">
+                <h5 class="modal-title" id="modal2Label">Sabor na Rua: Site para Carrinho de Lanche</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Sabor na Rua é um site criado com Next.js e TypeScript que simula um sistema de pedidos para um carrinho de lanche.</p>
+                <p>Ele conta com cardápio dinâmico, sistema de pedidos, mapa de localização e um design responsivo com foco em usabilidade. Animações e interatividade são garantidas com JavaScript moderno.</p>
+                <p>Este projeto destaca o uso de tecnologias modernas de front-end e boas práticas em design de interfaces.</p>
+                <img src="img/projeto-2.png" class="img-fluid w-100" alt="Imagem do site Sabor na Rua">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-dark text-light">
+            <div class="modal-header border-light">
+                <h5 class="modal-title" id="modal3Label">KivDesk: Gestão Financeira Desktop</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>KivDesk é uma aplicação desktop criada em C# que permite ao usuário organizar suas finanças pessoais e empresariais.</p>
+                <p>Funcionalidades incluem controle de despesas e receitas, geração de relatórios, gráficos com Chart.js e integração com banco de dados SQLite. Possui ainda uma interface web opcional para visualização remota.</p>
+                <p>Este projeto demonstra integração entre desktop e web, manipulação de dados e foco em usabilidade.</p>
+                <img src="img/projeto-3.jpeg" class="img-fluid w-100" alt="Imagem do app KivDesk">
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer class="container py-5 text-center">
+        <h2>Entre em contato</h2>
+        <div class="mb-3">
+            <i class="bi bi-github me-2"></i>
+            <a href="https://github.com/wagnrrt" class="text-light">GitHub</a>
+        </div>
+        <p class="my-5">© Copyright 2024. Produzido por Wagner</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Hover effect for project cards
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'scale(1.05)';
+                card.style.transition = 'transform 0.3s ease';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
